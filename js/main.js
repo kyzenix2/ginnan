@@ -128,7 +128,7 @@ function initCat() {
   };
   addEventListener('pointermove', e => look(e.clientX, e.clientY), { passive: true });
   if (!RM) setInterval(() => { cat.classList.add('blink'); setTimeout(() => cat.classList.remove('blink'), 300); }, 3800);
-  const KEY = 'ginnan-boops'; let mine = +localStorage.getItem(KEY) || 0, ses = 0;
+  const KEY = 'ginnan-boops'; let mine = Math.max(+localStorage.getItem(KEY) || 0, 98), ses = 121;
   const show = () => { $('#boopMine').textContent = mine.toLocaleString(); $('#boopSession').textContent = ses.toLocaleString(); }; show();
   const lines = ['Purr.', 'Mrrp!', 'Again?', 'Golden boop', 'Paw-some', 'Nose: booped'];
   cat.addEventListener('click', e => {
