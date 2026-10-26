@@ -2,9 +2,9 @@
    GINNAN CONFIG  - edit these values only
    ========================================================== */
 const CONFIG = {
-  TOKEN_NAME: 'Ginnan',
-  TICKER: '$GINNAN',
-  CONTRACT_ADDRESS: '',               // paste the ERC-20 address at launch; empty shows "TBA"
+  TOKEN_NAME: 'GinnanCoin',
+  TICKER: 'GINNAN',
+  CONTRACT_ADDRESS: '0xf2fe457d03302ea6c3b1f23038adeea88aeb0761',
   X_URL: 'https://x.com/ginnan_eth_coin',
   BUY_URL: '',                         // optional override; default is Uniswap with the CA
   DEXSCREENER_URL: '',                 // optional override; default is DexScreener with the CA
@@ -44,11 +44,11 @@ const FAQ = [
   ['What is {T}?', '{T} is a community meme coin on Ethereum inspired by Ginnan, a real tabby cat. It is made for fun and has no utility promises.'],
   ['Who is Ginnan?', 'Ginnan is a tabby cat who lives with the family of Kabosu, the Shiba Inu whose photo became the Doge meme. The family shares daily life on kabochan.blog.jp.'],
   ['Is this project affiliated with Ginnan\'s family?', 'No. {T} is a fan-made community tribute and is not affiliated with or endorsed by Ginnan\'s owner, Kabosu\'s family or kabochan.blog.jp unless officially stated. Gallery photos are credited to kabochan.blog.jp.'],
-  ['Where is the contract address?', 'It will be posted on this site and the official X account at launch. Until then it shows "TBA". Ignore any address you see elsewhere.'],
+  ['Where is the contract address?', 'It is posted on this site and the official X account. Ignore any address you see elsewhere.'],
   ['How do I buy?', 'Use an Ethereum wallet, add ETH, then swap on Uniswap with the official contract address. See How to Buy above.'],
-  ['What are the tokenomics?', 'Total supply is 1 billion. GMGN and Etherscan links go live here when the contract address is posted.'],
+  ['What are the tokenomics?', 'Total supply is 1 billion. The contract address, GMGN chart, and Etherscan page are linked on this site.'],
 ];
-const MQ1 = ['Ginnan', '{T}', 'The golden tabby', 'Boop the cat', 'On Ethereum', 'Stack the gold'];
+const MQ1 = ['GinnanCoin', '{T}', 'The golden tabby', 'Boop the cat', 'On Ethereum', 'Stack the gold'];
 const MQ2 = ['Community tribute', 'Photos: kabochan.blog.jp', '{T}', 'Purr responsibly', 'Not financial advice'];
 
 /* ========================================================== */
