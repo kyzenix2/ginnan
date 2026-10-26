@@ -45,11 +45,12 @@ main,footer,.nav{position:relative;z-index:3}
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden}
 .rays{position:absolute;right:-20vw;top:50%;width:120vw;aspect-ratio:1;transform:translateY(-50%);pointer-events:none;background:repeating-conic-gradient(from 0deg,rgba(226,179,62,.11) 0 6deg,transparent 6deg 18deg);-webkit-mask:radial-gradient(closest-side,#000 10%,transparent 72%);mask:radial-gradient(closest-side,#000 10%,transparent 72%);animation:spin 80s linear infinite}
 @keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
-.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;position:relative}
+.hero-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,520px);gap:48px;align-items:center;position:relative}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(226,179,62,.1);border:1px solid rgba(226,179,62,.4);font:600 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l);margin:0 0 22px}
 .eyebrow svg{color:var(--gold)}
+.hero-copy{min-width:0;container-type:inline-size}
 .title{display:flex;flex-direction:column}
-.shine{font-size:clamp(84px,12vw,184px);font-weight:900;letter-spacing:-.03em;line-height:.9;background:var(--goldgrad);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:goldslide 7s linear infinite;filter:drop-shadow(0 6px 24px rgba(226,179,62,.28))}
+.shine{font-size:clamp(48px,14cqi,120px);font-weight:900;letter-spacing:-.03em;line-height:.9;background:var(--goldgrad);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:goldslide 7s linear infinite;filter:drop-shadow(0 6px 24px rgba(226,179,62,.28))}
 .title .sub{font:italic 600 clamp(26px,3vw,40px)/1.1 var(--serif);color:var(--cream);margin-top:10px}
 .lead{max-width:560px;color:var(--cream-d);font-size:18px;margin:22px 0 30px}
 .lead b{color:var(--gold-l)}
@@ -60,10 +61,10 @@ main,footer,.nav{position:relative;z-index:3}
 .copy{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border-radius:10px;border:0;background:rgba(226,179,62,.16);color:var(--gold-l);font:700 13px/1 var(--sans);cursor:pointer}
 .copy:hover{background:rgba(226,179,62,.3)}.copy svg{width:15px;height:15px}
 /* coin */
-.coin-stage{position:relative;width:min(520px,100%);aspect-ratio:1;margin-left:auto;perspective:1400px;--rx:0deg;--ry:0deg}
+.coin-stage{position:relative;width:100%;aspect-ratio:1;margin-left:auto;perspective:1400px;--rx:0deg;--ry:0deg}
 .halo{position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle,rgba(255,224,130,.55),rgba(226,179,62,.18) 45%,transparent 70%);filter:blur(20px);animation:pulse 4s ease-in-out infinite}
 @keyframes pulse{50%{transform:scale(1.08);opacity:.75}}
-.coin{position:absolute;inset:12%;transform-style:preserve-3d;transform:rotateX(var(--rx)) rotateY(var(--ry));transition:transform .4s ease-out}
+.coin{position:absolute;inset:2%;transform-style:preserve-3d;transform:rotateX(var(--rx)) rotateY(var(--ry));transition:transform .4s ease-out}
 .coin::before{content:"";position:absolute;inset:0;transform-style:preserve-3d;animation:none}
 .coin .spinner{display:contents}
 .face,.edge{position:absolute;inset:0;border-radius:50%;backface-visibility:hidden;-webkit-backface-visibility:hidden}
